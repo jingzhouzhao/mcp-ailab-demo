@@ -40,7 +40,7 @@ export function createServer(): McpServer {
       if (!name) {
         throw new Error("name is required.");
       }
-      const map = {
+      const map : { [key: string]: string } = {
         "胡伟军": "13999999999",
         "王文翔": "13888888888",
         "孙海宁": "13777777777",
